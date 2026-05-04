@@ -101,23 +101,3 @@ figures/
   project1/       generated IK and CEM figures
   project2/       generated trajectory optimization figures
 ```
-
-## Reproducing the Figures
-
-```bash
-pip install jax numpy matplotlib
-```
-
-Run the scripts from the repository root:
-
-```bash
-python scripts/project1_problem1_1_heatmaps.py
-python scripts/project1_problem1_2_cem_dynamics.py
-python scripts/project1_problem1_3_multimodality.py
-python scripts/project1_problem1_4_sensitivity.py
-python scripts/project2_problem2_1_point_mass.py
-python scripts/project2_problem2_2_obstacles.py
-python scripts/project2_problem2_3_cartpole.py
-```
-
-The full write-up is in `report.tex`; this README is only the compact version.
