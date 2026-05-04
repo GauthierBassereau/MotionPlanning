@@ -16,7 +16,7 @@ Cross-Entropy Method (CEM), inverse kinematics, and trajectory optimization.
 
 ### Cost Landscapes Matter
 
-![IK cost landscapes](figures/project1/problem1_1_heatmaps.png)
+<img src="figures/project1/problem1_1_heatmaps.png" alt="IK cost landscapes" width="760">
 
 For a 3-link planar arm, the same reaching task behaves very differently
 depending on the objective. The quadratic and linear costs expose usable basins;
@@ -27,14 +27,14 @@ I also ran CEM across multiple seeds on a target with two inverse-kinematics
 branches. A single Gaussian CEM run usually collapses to one branch, but the
 multi-seed result recovers both modes.
 
-![IK modes](figures/project1/problem1_3_final_solution_scatter.png)
+<img src="figures/project1/problem1_3_final_solution_scatter.png" alt="IK modes" width="430">
 
 ### Sampling Finds Basins, Gradients Refine
 
 For obstacle navigation, I evaluated a waypoint-parameterized landscape to make
 the non-convex structure visible:
 
-![Obstacle landscape](figures/project2/problem2_2_waypoint_landscape.png)
+<img src="figures/project2/problem2_2_waypoint_landscape.png" alt="Obstacle waypoint landscape" width="430">
 
 Then I compared CEM, Adam, and a short CEM warm start followed by Adam over 20
 random seeds:
@@ -48,7 +48,7 @@ random seeds:
 The hybrid is the useful lesson: CEM can jump between route families, while Adam
 is much cheaper once the trajectory is already in a good basin.
 
-![Final obstacle trajectories](figures/project2/problem2_2_all_final_trajectories.png)
+<img src="figures/project2/problem2_2_all_final_trajectories.png" alt="Final obstacle trajectories" width="760">
 
 ### Differentiability Changes the Winner
 
@@ -68,9 +68,9 @@ gradient method degrades more strongly:
 | CEM hard-stop | 64.987 | 50,000 |
 | Adam hard-stop | 97.325 | 400 |
 
-![Cart-pole convergence](figures/project2/problem2_3_convergence.png)
+<img src="figures/project2/problem2_3_convergence.png" alt="Cart-pole convergence" width="560">
 
-![Cart-pole swing-up](figures/project2/problem2_3_frame_sequence.png)
+<img src="figures/project2/problem2_3_frame_sequence.png" alt="Cart-pole swing-up" width="760">
 
 ## Implementation Notes
 
